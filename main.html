@@ -10,16 +10,33 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			// let larg = arr[0]
+			// let sLarg = arr[0]
+			// let arr = [5,10,12,11,9]
+			//5,9,10,11,12
+			// for (let index = 1; index < arr.length; index++) {
+			// 	// 10>5
+			// 	if(arr[index]>larg){
+			// 		slarg = larg
+			// 		larg = arr[index]
+			// 	}
+			// 	else if (arr[index]>sLarg && arr[index]<larg){
+			// 		sLarg = arr[index]
+			// 	}
+			// }
+			// return sLarg
+			arr.sort()
+			return arr[arr.length-2]
 		}
-
+		
+	
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			// var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				// arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			//alert(secondHighest(arr));
 		}
 		Main();
 	</script>
